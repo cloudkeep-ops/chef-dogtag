@@ -1,0 +1,23 @@
+[KRA]
+pki_admin_cert_file=<%= node['dogtag']['kra']['pki_admin_cert_file'] %>
+pki_admin_email=<%= node['dogtag']['kra']['pki_admin_email'] %>
+pki_admin_name=<%= node['dogtag']['kra']['pki_admin_name'] %>
+pki_admin_nickname=<%= node['dogtag']['kra']['pki_admin_nickname'] %>
+pki_admin_password=<%= node['dogtag']['kra']['pki_admin_password'] %>
+pki_admin_uid=<%= node['dogtag']['kra']['pki_admin_uid'] %>
+pki_backup_password=<%= node['dogtag']['kra']['pki_backup_password'] %>
+pki_client_database_password=<%= node['dogtag']['kra']['pki_client_database_password'] %>
+<% if node['dogtag']['kra']['pki_client_database_purge'] %>
+pki_client_database_purge=True
+<% else %>
+pki_client_database_purge=False
+<% end %>
+pki_client_pkcs12_password=<%= node['dogtag']['kra']['pki_client_pkcs12_password'] %>
+pki_clone_pkcs12_password=<%= node['dogtag']['kra']['pki_clone_pkcs12_password'] %>
+pki_ds_base_dn=<%= node['dogtag']['kra']['pki_ds_base_dn'] %>
+pki_ds_database=<%= node['dogtag']['kra']['pki_ds_database'] %>
+pki_ds_password=<%= node['dogtag']['kra']['pki_ds_password'] %>
+pki_security_domain_name=<%= node['dogtag']['kra']['pki_security_domain_name'] %>
+pki_security_domain_user=<%= node['dogtag']['kra']['pki_security_domain_user'] %>
+pki_security_domain_password=<%= node['dogtag']['kra']['pki_security_domain_password'] %>
+pki_token_password=<%= node['dogtag']['kra']['pki_token_password'] %>
